@@ -1,0 +1,12 @@
+Language - Java
+Spring Boot - 3.3.0
+
+Group - com.example
+Artifact - elevator
+Name - elevator
+Description - My elevator
+Package name - come.example.elevator
+Packaging - Jar
+Java - 17
+
+Dependencies - Lombok, Spring Web
