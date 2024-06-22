@@ -25,19 +25,22 @@ public class CoinPaymentHandler implements PaymentHandler {
 
     private List<Coin> getPayment() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Press OK after coin insertion");
-        String input = null;
+        String input;
         List<Coin> coinList = new ArrayList<>();
-        do {
+        System.out.println("Press OK after coin insertion");
+        while(true) {
             try{
                 input = scanner.nextLine();
+                if("OK".equals(input)) {
+                    break;
+                }
                 int coinValue = Integer.parseInt(input);
                 Coin coin = Coin.fromValue(coinValue);
                 coinList.add(coin);
             }catch (Exception e) {
                 System.out.println("Insert valid amount");
             }
-        } while (!"OK".equals(input));
+        }
         return coinList;
     }
 }
