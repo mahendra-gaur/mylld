@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/my_concurrency/pom.xml" />
         <option value="$PROJECT_DIR$/experiments/pom.xml" />
         <option value="$PROJECT_DIR$/vending_machine/pom.xml" />
+        <option value="$PROJECT_DIR$/locker/pom.xml" />
+        <option value="$PROJECT_DIR$/locker_udit/pom.xml" />
       </list>
     </option>
   </component>

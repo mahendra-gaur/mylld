@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/elevator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/experiments/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locker_udit/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my_concurrency/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parking-lot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vending_machine/src/main/java" charset="UTF-8" />

@@ -1,0 +1,75 @@
+Question to discuss
+  - Locker size
+        - Will every locker be of the same size?
+        - Is there any size restriction on an item that can be kept in the locker?
+  - Locker selection
+        - How will the system make sure that multiple customers do not get the same locker?
+        - Will the customer choose the locker of his own choice, or will the system assign him a locker based on availability?
+        - Can a customer get two lockers for different orders at the same time?
+        - Will the system keep in mind the locker and package sizes while assigning the locker to the customer?
+  - Locker status
+        - Is there any time constraint on the package that can be kept in the locker?
+        - What will happen if the customer does not come to pick up his package within the valid time period?
+  - Returning an item
+        - Can the customer return an item through the Amazon Locker service?
+        - If yes, will they get the same locker from which they picked up the item?
+        - How will the locker be assigned to the customer while returning an item?
+===========================================================================================================================================================================
+Design pattern
+===========================================================================================================================================================================
+Requirement collection
+  Following are the expectations from the system:
+      - Person asks the system to allocate a locker for a given package. Assume random allocation for now. The system should be extensible and accommodate allocation of locker based on the size of the input package
+      - The system must generate a code/otp and send it to the user along with the locker details
+      - The user can enter the otp & locker details to unlock the locker
+      - Once the package is taken out, the locker can be allocated for any other order
+      - Users can use the locker for returning an item. OTP/code will be sent to the delivery person in this case
+      - Operations/Admin can view & vacate all lockers which are in use for more than 3 days
+
+  Evaluation criteria:
+      - Code readability
+      - Extensibility & re-usability
+      - Modularity
+      - Testability
+===========================================================================================================================================================================
+model:-
+    - Size
+    - LockerItem
+    - Package
+    - Slot
+    - Locker
+    - Contact
+    - LockerUser
+    - Buyer
+    - DeliveryPerson
+repository
+    - ILockerRepository.java
+    - ISlotOtpRepository.java
+    - LockerRepositoryInMemory.java
+    - SlotOtpRepositoryInMemory.java
+controller
+    LockerController.java
+    OrderController.java
+    ReturnController.java
+exceptions
+    BadRequestException.java
+    LockerAlreadyExistsException.java
+    NoSlotAvailableException.java
+    SlotAlreadyOccupiedException.java
+service
+    LockerService
+strategies
+    ISlotAssignmentStrategy
+    IRandomGenerator
+    RandomGeneratorDefault
+    SlotAssignmentStrategyRandom
+    ISlotFilteringStrategy
+    SlotFilteringStrategySizeBased
+service
+    OtpService
+strategies
+    IOtpGenerator
+    OtpGeneratorRandom
+    DeliveryPersonService.java
+    NotificationService.java
+
