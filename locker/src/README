@@ -48,28 +48,35 @@ repository
     - LockerRepositoryInMemory.java
     - SlotOtpRepositoryInMemory.java
 controller
-    LockerController.java
-    OrderController.java
-    ReturnController.java
+    - LockerController.java
+    - OrderController.java
+    - ReturnController.java
 exceptions
-    BadRequestException.java
-    LockerAlreadyExistsException.java
-    NoSlotAvailableException.java
-    SlotAlreadyOccupiedException.java
+    - BadRequestException.java
+    - LockerAlreadyExistsException.java
+    - NoSlotAvailableException.java
+    - SlotAlreadyOccupiedException.java
 service
-    LockerService
+    - LockerService
 strategies
-    ISlotAssignmentStrategy
-    IRandomGenerator
-    RandomGeneratorDefault
-    SlotAssignmentStrategyRandom
-    ISlotFilteringStrategy
-    SlotFilteringStrategySizeBased
+    - ISlotAssignmentStrategy
+    - IRandomGenerator
+    - RandomGeneratorDefault
+    - SlotAssignmentStrategyRandom
+    - ISlotFilteringStrategy
+    - SlotFilteringStrategySizeBased
 service
-    OtpService
+    - OtpService
 strategies
-    IOtpGenerator
-    OtpGeneratorRandom
-    DeliveryPersonService.java
-    NotificationService.java
+    - IOtpGenerator
+    - OtpGeneratorRandom
+    - DeliveryPersonService.java
+    - NotificationService.java
 
+TESTS:-
+    - LockerUtils
+    - RandomUtils
+    - BuyerUtils
+    - BaseTest
+    - SlotAllocationTests
+    - OtpVerificationTests
