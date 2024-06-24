@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="parking-lot" />
         <module name="elevator" />
+        <module name="mySimpleLUR" />
         <module name="my_concurrency" />
         <module name="experiments" />
         <module name="locker" />
@@ -25,6 +26,7 @@
       <module name="experiments" options="-parameters" />
       <module name="locker" options="-parameters" />
       <module name="locker_udit" options="-parameters" />
+      <module name="mySimpleLUR" options="-parameters" />
       <module name="my_concurrency" options="-parameters" />
       <module name="parking-lot" options="-parameters" />
       <module name="vending_machine" options="-parameters" />
