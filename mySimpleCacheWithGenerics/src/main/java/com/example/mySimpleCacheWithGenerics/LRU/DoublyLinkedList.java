@@ -1,4 +1,4 @@
-package com.example.mySimpleLUR.cache;
+package com.example.mySimpleCacheWithGenerics.LRU;
 
 public class DoublyLinkedList<K, V> {
 

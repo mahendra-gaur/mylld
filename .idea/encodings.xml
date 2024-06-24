@@ -5,7 +5,9 @@
     <file url="file://$PROJECT_DIR$/experiments/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/locker/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/locker_udit/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mySimpleLUR/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mySimpleCacheWithGenerics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mySimpleLFU/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mySimpleLRU/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my_concurrency/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parking-lot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vending_machine/src/main/java" charset="UTF-8" />

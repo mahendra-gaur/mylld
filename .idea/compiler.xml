@@ -9,15 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="parking-lot" />
         <module name="elevator" />
-        <module name="mySimpleLUR" />
         <module name="my_concurrency" />
         <module name="experiments" />
+        <module name="mySimpleCacheWithGenerics" />
         <module name="locker" />
         <module name="vending_machine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="locker_udit" target="17" />
+      <module name="mySimpleLFU" target="17" />
+      <module name="mySimpleLRU" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,7 +28,9 @@
       <module name="experiments" options="-parameters" />
       <module name="locker" options="-parameters" />
       <module name="locker_udit" options="-parameters" />
-      <module name="mySimpleLUR" options="-parameters" />
+      <module name="mySimpleCacheWithGenerics" options="-parameters" />
+      <module name="mySimpleLFU" options="-parameters" />
+      <module name="mySimpleLRU" options="-parameters" />
       <module name="my_concurrency" options="-parameters" />
       <module name="parking-lot" options="-parameters" />
       <module name="vending_machine" options="-parameters" />

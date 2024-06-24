@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/locker/pom.xml" />
         <option value="$PROJECT_DIR$/locker_udit/pom.xml" />
         <option value="$PROJECT_DIR$/mySimpleLUR/pom.xml" />
+        <option value="$PROJECT_DIR$/mySimpleLFU/pom.xml" />
+        <option value="$PROJECT_DIR$/mySimpleCacheWithGenerics/pom.xml" />
       </list>
     </option>
   </component>

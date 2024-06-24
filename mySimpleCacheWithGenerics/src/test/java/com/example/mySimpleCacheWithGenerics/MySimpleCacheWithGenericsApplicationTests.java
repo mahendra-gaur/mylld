@@ -1,10 +1,10 @@
-package com.example.mySimpleLUR;
+package com.example.mySimpleCacheWithGenerics;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MySimpleLurApplicationTests {
+class MySimpleCacheWithGenericsApplicationTests {
 
 	@Test
 	void contextLoads() {

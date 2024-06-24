@@ -8,5 +8,12 @@ Parking_lot
     - everything is remaining
 
   vending_machine
-    -
+    - enums
+    - products
+    - shelf
+    - inventory
+    - statemachine
+    - vendingmachine
+    - exception
+    - handler
 

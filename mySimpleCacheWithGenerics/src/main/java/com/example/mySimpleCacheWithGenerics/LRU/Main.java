@@ -1,6 +1,5 @@
-package com.example.mySimpleLUR;
+package com.example.mySimpleCacheWithGenerics.LRU;
 
-import com.example.mySimpleLUR.cache.LRUCache;
 
 public class Main {
 
