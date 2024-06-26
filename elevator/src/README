@@ -23,3 +23,7 @@ elevatorselection
         M_OddEvenElevatorSelectionStrategy
         M_ZoneElevatorSelectionStrategy
     M_ElevatorSelectionStrategy
+
+
+Elevator movement algos:-
+    https://github.com/kumaransg/LLD/blob/main/Low_level_Problem_set_2/elevator/SCAN.java
