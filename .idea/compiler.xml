@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="parking-lot" />
         <module name="elevator" />
+        <module name="loggingframework" />
         <module name="my_concurrency" />
         <module name="experiments" />
         <module name="mySimpleCacheWithGenerics" />
@@ -28,6 +29,7 @@
       <module name="experiments" options="-parameters" />
       <module name="locker" options="-parameters" />
       <module name="locker_udit" options="-parameters" />
+      <module name="loggingframework" options="-parameters" />
       <module name="mySimpleCacheWithGenerics" options="-parameters" />
       <module name="mySimpleLFU" options="-parameters" />
       <module name="mySimpleLRU" options="-parameters" />

@@ -27,3 +27,7 @@ elevatorselection
 
 Elevator movement algos:-
     https://github.com/kumaransg/LLD/blob/main/Low_level_Problem_set_2/elevator/SCAN.java
+
+----------------------------------------------------------------------------
+The existing code can be improved with the help of below
+  - https://tedweishiwang.github.io/journal/object-oriented-design-elevator.html
