@@ -10,8 +10,4 @@ public class FatalLogger extends AbstractLogger {
         this.level = LogLevel.FATAL;
     }
 
-    @Override
-    public void display(LogMessage logMessage) {
-        this.logAppender.append(logMessage);
-    }
 }

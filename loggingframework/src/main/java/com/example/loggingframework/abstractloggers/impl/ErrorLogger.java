@@ -10,8 +10,4 @@ public class ErrorLogger extends AbstractLogger {
         this.level = LogLevel.ERROR;
     }
 
-    @Override
-    public void display(LogMessage logMessage) {
-        this.logAppender.append(logMessage);
-    }
 }

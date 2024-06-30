@@ -10,8 +10,4 @@ public class WarnLogger extends AbstractLogger {
         this.level = LogLevel.WARN;
     }
 
-    @Override
-    public void display(LogMessage logMessage) {
-        this.logAppender.append(logMessage);
-    }
 }

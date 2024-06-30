@@ -10,8 +10,4 @@ public class InfoLogger extends AbstractLogger {
         this.level = LogLevel.INFO;
     }
 
-    @Override
-    public void display(LogMessage logMessage) {
-        this.logAppender.append(logMessage);
-    }
 }

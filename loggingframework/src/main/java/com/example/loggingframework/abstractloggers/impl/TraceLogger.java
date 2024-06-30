@@ -10,8 +10,4 @@ public class TraceLogger extends AbstractLogger {
         this.level = LogLevel.TRACE;
     }
 
-    @Override
-    public void display(LogMessage logMessage) {
-        this.logAppender.append(logMessage);
-    }
 }

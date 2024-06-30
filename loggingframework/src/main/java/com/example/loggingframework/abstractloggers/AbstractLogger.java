@@ -26,5 +26,7 @@ public abstract class AbstractLogger {
             nextLevelLogger.logMessage(logMessage);
         }
     }
-    protected abstract void display(LogMessage logMessage);
+    protected void display(LogMessage logMessage) {
+        this.logAppender.append(logMessage);
+    }
 }
