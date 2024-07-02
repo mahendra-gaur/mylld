@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="parking-lot" />
+        <module name="meeting-scheduler" />
         <module name="elevator" />
         <module name="loggingframework" />
         <module name="my_concurrency" />
@@ -30,6 +31,7 @@
       <module name="locker" options="-parameters" />
       <module name="locker_udit" options="-parameters" />
       <module name="loggingframework" options="-parameters" />
+      <module name="meeting-scheduler" options="-parameters" />
       <module name="mySimpleCacheWithGenerics" options="-parameters" />
       <module name="mySimpleLFU" options="-parameters" />
       <module name="mySimpleLRU" options="-parameters" />

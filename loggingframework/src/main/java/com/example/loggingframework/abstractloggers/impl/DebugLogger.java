@@ -1,6 +1,5 @@
 package com.example.loggingframework.abstractloggers.impl;
 
-import com.example.loggingframework.message.LogMessage;
 import com.example.loggingframework.enums.LogLevel;
 import com.example.loggingframework.abstractloggers.AbstractLogger;
 

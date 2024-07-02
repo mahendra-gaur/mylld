@@ -1,0 +1,12 @@
+model
+repository
+service
+searchmeetingroom
+meetingstates
+notification
+
+
+Remaining:-
+  - Exception Handling
+  - input validation
+  - thread safety

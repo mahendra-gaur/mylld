@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/mySimpleLFU/pom.xml" />
         <option value="$PROJECT_DIR$/mySimpleCacheWithGenerics/pom.xml" />
         <option value="$PROJECT_DIR$/loggingframework/pom.xml" />
+        <option value="$PROJECT_DIR$/meeting-scheduler/pom.xml" />
       </list>
     </option>
   </component>
