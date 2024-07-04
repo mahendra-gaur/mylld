@@ -11,10 +11,12 @@
         <module name="meeting-scheduler" />
         <module name="elevator" />
         <module name="loggingframework" />
+        <module name="rate-limiter" />
         <module name="my_concurrency" />
         <module name="designpatterns" />
         <module name="experiments" />
         <module name="mySimpleCacheWithGenerics" />
+        <module name="CustomThreadPool" />
         <module name="locker" />
         <module name="vending_machine" />
       </profile>
@@ -27,6 +29,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CustomThreadPool" options="-parameters" />
       <module name="designpatterns" options="-parameters" />
       <module name="elevator" options="-parameters" />
       <module name="experiments" options="-parameters" />
@@ -39,6 +42,7 @@
       <module name="mySimpleLRU" options="-parameters" />
       <module name="my_concurrency" options="-parameters" />
       <module name="parking-lot" options="-parameters" />
+      <module name="rate-limiter" options="-parameters" />
       <module name="vending_machine" options="-parameters" />
     </option>
   </component>

@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/loggingframework/pom.xml" />
         <option value="$PROJECT_DIR$/meeting-scheduler/pom.xml" />
         <option value="$PROJECT_DIR$/designpatterns/pom.xml" />
+        <option value="$PROJECT_DIR$/CustomThreadPool/pom.xml" />
+        <option value="$PROJECT_DIR$/rate-limiter/pom.xml" />
       </list>
     </option>
   </component>
