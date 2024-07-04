@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/mySimpleCacheWithGenerics/pom.xml" />
         <option value="$PROJECT_DIR$/loggingframework/pom.xml" />
         <option value="$PROJECT_DIR$/meeting-scheduler/pom.xml" />
+        <option value="$PROJECT_DIR$/designpatterns/pom.xml" />
       </list>
     </option>
   </component>

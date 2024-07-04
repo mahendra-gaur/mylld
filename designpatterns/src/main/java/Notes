@@ -1,0 +1,10 @@
+Strategy Design Pattern:- Completed
+  - Use it when multiple child has to provide the same implementation of the method.
+
+Observer Design Pattern:- Completed
+  - There is one Observable and multiple observers.
+  - All observers gets notified whenever the state of Observable is changed
+
+Decorator Design Pattern:-
+  - Decorator is a structural design pattern that lets you attach new behaviors to objects by
+  placing these objects inside special wrapper objects that contain the behaviors.

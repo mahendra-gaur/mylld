@@ -12,6 +12,7 @@
         <module name="elevator" />
         <module name="loggingframework" />
         <module name="my_concurrency" />
+        <module name="designpatterns" />
         <module name="experiments" />
         <module name="mySimpleCacheWithGenerics" />
         <module name="locker" />
@@ -26,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="designpatterns" options="-parameters" />
       <module name="elevator" options="-parameters" />
       <module name="experiments" options="-parameters" />
       <module name="locker" options="-parameters" />
