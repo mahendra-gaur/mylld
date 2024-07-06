@@ -8,16 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="parking-lot" />
-        <module name="meeting-scheduler" />
-        <module name="elevator" />
         <module name="loggingframework" />
         <module name="rate-limiter" />
         <module name="my_concurrency" />
         <module name="designpatterns" />
         <module name="experiments" />
+        <module name="locker" />
+        <module name="meeting-scheduler" />
+        <module name="elevator" />
         <module name="mySimpleCacheWithGenerics" />
         <module name="CustomThreadPool" />
-        <module name="locker" />
         <module name="vending_machine" />
       </profile>
     </annotationProcessing>
@@ -25,6 +25,7 @@
       <module name="locker_udit" target="17" />
       <module name="mySimpleLFU" target="17" />
       <module name="mySimpleLRU" target="17" />
+      <module name="Test" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

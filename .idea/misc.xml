@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/designpatterns/pom.xml" />
         <option value="$PROJECT_DIR$/CustomThreadPool/pom.xml" />
         <option value="$PROJECT_DIR$/rate-limiter/pom.xml" />
+        <option value="$PROJECT_DIR$/cache-shashank/pom.xml" />
       </list>
     </option>
   </component>
