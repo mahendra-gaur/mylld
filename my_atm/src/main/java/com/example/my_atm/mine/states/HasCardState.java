@@ -2,8 +2,8 @@ package com.example.my_atm.mine.states;
 
 import com.example.my_atm.mine.ATM;
 import com.example.my_atm.mine.Card;
-import com.example.my_atm.mine.temp.CardReader;
-import com.example.my_atm.mine.temp.Keypad;
+import com.example.my_atm.mine.helper.CardReader;
+import com.example.my_atm.mine.helper.Keypad;
 
 public class HasCardState extends ATMState{
 

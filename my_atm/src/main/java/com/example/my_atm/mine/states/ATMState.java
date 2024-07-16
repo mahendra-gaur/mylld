@@ -2,8 +2,7 @@ package com.example.my_atm.mine.states;
 
 import com.example.my_atm.mine.ATM;
 import com.example.my_atm.mine.Card;
-import com.example.my_atm.mine.TransactionType;
-import com.example.my_atm.mine.temp.Screen;
+import com.example.my_atm.mine.helper.Screen;
 
 public abstract class ATMState {
 

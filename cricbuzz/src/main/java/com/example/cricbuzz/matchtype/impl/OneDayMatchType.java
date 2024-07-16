@@ -1,0 +1,15 @@
+package com.example.cricbuzz.matchtype.impl;
+
+import com.example.cricbuzz.matchtype.MatchType;
+
+public class OneDayMatchType implements MatchType {
+    @Override
+    public int noOfOvers() {
+        return 50;
+    }
+
+    @Override
+    public int maxOverCountBowlers() {
+        return 10;
+    }
+}
