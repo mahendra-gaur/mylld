@@ -1,0 +1,13 @@
+app_name: boot-app-a
+app_path: ./target/spring-boot-rest-jpa-0.0.1-SNAPSHOT.jar
+instances: 1
+memory: 1G
+disk_quota: 512M
+buildpack-java: java_buildpack_offline
+domain: apps.pcf.example.io
+timeout: 60
+
+
+
+# Deploy app
+#cf push --vars-file vars-dev.yml
