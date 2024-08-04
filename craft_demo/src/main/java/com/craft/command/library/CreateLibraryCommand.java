@@ -72,7 +72,7 @@ public class CreateLibraryCommand implements Command {
             int exitCode = process.waitFor();
             System.out.println("Command executed with exit code: " + exitCode);
             libraryEntity.setStatus(ResourceStatus.CREATED);
-            libraryEntity.setStatusDetails("Library created successfully.");
+            libraryEntity.setStatusDetails("LibraryRequest created successfully.");
             libraryEntity.setVersion("1.0-SNAPSHOT");
 
         } catch (IOException | InterruptedException e) {

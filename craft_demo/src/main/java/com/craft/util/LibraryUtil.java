@@ -1,22 +1,19 @@
 package com.craft.util;
 
 import com.craft.entity.LibraryEntity;
-import com.craft.model.Library;
+import com.craft.model.LibraryRequest;
+import com.craft.model.LibraryUpdateRequest;
 
 public class LibraryUtil {
-    public static void updateProperties(LibraryEntity libraryEntityDetails, LibraryEntity libraryEntity) {
-        libraryEntity.setName(libraryEntityDetails.getName());
-        libraryEntity.setDescription(libraryEntityDetails.getDescription());
-        libraryEntity.setCodeRepository(libraryEntityDetails.getCodeRepository());
-        libraryEntity.setLineOfBusiness(libraryEntityDetails.getLineOfBusiness());
-        libraryEntity.setVersion(libraryEntityDetails.getVersion());
+    public static void updateProperties(LibraryEntity libraryEntityDetails, LibraryUpdateRequest library) {
+        libraryEntityDetails.setDescription(library.getDescription());
     }
 
-    public static LibraryEntity getLibraryEntity(Library library) {
+    public static LibraryEntity getLibraryEntity(LibraryRequest libraryRequest) {
         LibraryEntity libraryEntity = new LibraryEntity();
-        libraryEntity.setName(library.getName());
-        libraryEntity.setDescription(library.getDescription());
-        libraryEntity.setLineOfBusiness(library.getLineOfBusiness());
+        libraryEntity.setName(libraryRequest.getName());
+        libraryEntity.setDescription(libraryRequest.getDescription());
+        libraryEntity.setLineOfBusiness(libraryRequest.getLineOfBusiness());
 
         return libraryEntity;
     }
