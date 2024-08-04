@@ -36,6 +36,20 @@ public class CreateLibraryCommand implements Command {
         // Define the directory in which to execute the command
         File workingDirectory = new File("./test-craft");
 
+        // Create the directory if it doesn't exist
+        if (!workingDirectory.exists()) {
+            boolean created = workingDirectory.mkdirs();
+            if (!created) {
+                logger.error("Failed to create directory: {}", workingDirectory.getAbsolutePath());
+                libraryEntity.setStatus(ResourceStatus.CREATION_FAILED);
+                libraryEntity.setStatusDetails("Failed to create working directory.");
+                return; // Exit the method if directory creation fails
+            }
+        }
+
+        // Print the full path of the newly created directory
+        System.out.println("Created directory: " + workingDirectory.getAbsolutePath());
+
         // Create a ProcessBuilder instance
         ProcessBuilder processBuilder = new ProcessBuilder(command);
         processBuilder.directory(workingDirectory); // Set the working directory
