@@ -34,7 +34,7 @@ public class CreateLibraryCommand implements Command {
         };
 
         // Define the directory in which to execute the command
-        File workingDirectory = new File("resources");
+        File workingDirectory = new File("craft_resources");
 
         // Create the directory if it doesn't exist
         if (!workingDirectory.exists()) {
