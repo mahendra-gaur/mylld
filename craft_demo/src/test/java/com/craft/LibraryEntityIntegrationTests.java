@@ -26,13 +26,13 @@ public class LibraryEntityIntegrationTests {
     @Test
     public void testCreateLibrary_success() {
         LibraryEntity libraryEntity = new LibraryEntity();
-        libraryEntity.setName("Test LibraryEntity");
+        libraryEntity.setName("GithubUploadTest LibraryEntity");
         libraryEntity.setVersion("1.0");
 
         ResponseEntity<LibraryEntity> response = restTemplate.postForEntity("/api/libraries", libraryEntity, LibraryEntity.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isNotNull();
-        assertThat(response.getBody().getName()).isEqualTo("Test LibraryEntity");
+        assertThat(response.getBody().getName()).isEqualTo("GithubUploadTest LibraryEntity");
     }
 
     @Test
@@ -60,7 +60,7 @@ public class LibraryEntityIntegrationTests {
     @Test
     public void testUpdateLibrary_success() {
         LibraryEntity libraryEntity = new LibraryEntity();
-        libraryEntity.setName("Update Test LibraryEntity");
+        libraryEntity.setName("Update GithubUploadTest LibraryEntity");
         libraryEntity.setVersion("1.0");
         ResponseEntity<LibraryEntity> createResponse = restTemplate.postForEntity("/api/libraries", libraryEntity, LibraryEntity.class);
 
@@ -77,7 +77,7 @@ public class LibraryEntityIntegrationTests {
     @Test
     public void testDeleteLibrary_success() {
         LibraryEntity libraryEntity = new LibraryEntity();
-        libraryEntity.setName("Delete Test LibraryEntity");
+        libraryEntity.setName("Delete GithubUploadTest LibraryEntity");
         libraryEntity.setVersion("1.0");
         ResponseEntity<LibraryEntity> createResponse = restTemplate.postForEntity("/api/libraries", libraryEntity, LibraryEntity.class);
 
@@ -93,7 +93,7 @@ public class LibraryEntityIntegrationTests {
     @Test
     public void testAddLibraryToService_success() {
         ServiceEntity serviceEntity = new ServiceEntity();
-        serviceEntity.setName("Test ServiceEntity");
+        serviceEntity.setName("GithubUploadTest ServiceEntity");
         serviceEntity.setServiceType(ServiceType.P1);
         serviceEntity.setDeploymentPlatform("AWS");
         ResponseEntity<ServiceEntity> serviceResponse = restTemplate.postForEntity("/api/services", serviceEntity, ServiceEntity.class);

@@ -26,7 +26,7 @@ public class ServiceEntityIntegrationTests {
     @Test
     public void testCreateService_success() {
         ServiceEntity serviceEntity = new ServiceEntity();
-        serviceEntity.setName("Test ServiceEntity");
+        serviceEntity.setName("GithubUploadTest ServiceEntity");
         serviceEntity.setServiceType(ServiceType.P1);
         serviceEntity.setDeploymentPlatform("AWS");
         serviceEntity.setLogUrl("http://log.url");
@@ -34,7 +34,7 @@ public class ServiceEntityIntegrationTests {
         ResponseEntity<ServiceEntity> response = restTemplate.postForEntity("/api/services", serviceEntity, ServiceEntity.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isNotNull();
-        assertThat(response.getBody().getName()).isEqualTo("Test ServiceEntity");
+        assertThat(response.getBody().getName()).isEqualTo("GithubUploadTest ServiceEntity");
     }
 
     @Test
@@ -51,7 +51,7 @@ public class ServiceEntityIntegrationTests {
     @Test
     public void testGetServiceById_success() {
         ServiceEntity serviceEntity = new ServiceEntity();
-        serviceEntity.setName("Get ServiceEntity Test");
+        serviceEntity.setName("Get ServiceEntity GithubUploadTest");
         serviceEntity.setServiceType(ServiceType.P2);
         serviceEntity.setDeploymentPlatform("GCP");
         ResponseEntity<ServiceEntity> createResponse = restTemplate.postForEntity("/api/services", serviceEntity, ServiceEntity.class);
@@ -60,7 +60,7 @@ public class ServiceEntityIntegrationTests {
         ResponseEntity<ServiceEntity> response = restTemplate.getForEntity("/api/services/{id}", ServiceEntity.class, createResponse.getBody().getId());
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isNotNull();
-        assertThat(response.getBody().getName()).isEqualTo("Get ServiceEntity Test");
+        assertThat(response.getBody().getName()).isEqualTo("Get ServiceEntity GithubUploadTest");
     }
 
     @Test
@@ -72,7 +72,7 @@ public class ServiceEntityIntegrationTests {
     @Test
     public void testUpdateService_success() {
         ServiceEntity serviceEntity = new ServiceEntity();
-        serviceEntity.setName("Update Test ServiceEntity");
+        serviceEntity.setName("Update GithubUploadTest ServiceEntity");
         serviceEntity.setServiceType(ServiceType.P1);
         serviceEntity.setDeploymentPlatform("AWS");
         ResponseEntity<ServiceEntity> createResponse = restTemplate.postForEntity("/api/services", serviceEntity, ServiceEntity.class);
@@ -90,7 +90,7 @@ public class ServiceEntityIntegrationTests {
     @Test
     public void testDeleteService_success() {
         ServiceEntity serviceEntity = new ServiceEntity();
-        serviceEntity.setName("Delete Test ServiceEntity");
+        serviceEntity.setName("Delete GithubUploadTest ServiceEntity");
         serviceEntity.setServiceType(ServiceType.P3);
         serviceEntity.setDeploymentPlatform("AWS");
         ResponseEntity<ServiceEntity> createResponse = restTemplate.postForEntity("/api/services", serviceEntity, ServiceEntity.class);
