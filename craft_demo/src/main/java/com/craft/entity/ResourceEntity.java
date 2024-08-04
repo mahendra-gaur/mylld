@@ -1,5 +1,6 @@
 package com.craft.entity;
 
+import com.craft.model.ResourceStatus;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,4 +17,7 @@ public abstract class ResourceEntity {
     private String description;
     private String codeRepository;
     private String lineOfBusiness;
+
+    private ResourceStatus status;
+    private String statusDetails;
 }
